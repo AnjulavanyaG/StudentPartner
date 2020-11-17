@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Welcome!</title>
+<style>
+.bg{
+height:100%;
+width:100%;
+background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://img.collegedekhocdn.com/media/img/institute/crawled_images/None/DHGHTTJGGJTJT.jpg?tr=h-200,w-300%22");
+background-position:center;
+background-size:cover;
+position:absolute;
+}
+.form-box{
+width:380px;
+height:480px;
+position:relative;
+margin:6% auto;
+background:#fff;
+padding:5px;
+overflow:hidden;
+}
+.button-box{
+width:220px;
+margin:35px auto;
+position:relative;
+box-shadow:0 0 20px 9px #ff61241f;
+border-radius:30px;
+}
+.toggle-btn{
+padding:10px;
+cursor:pointer;
+background:transparent;
+border:0;
+outline:none;
+position:relative;
+}
+#btn{
+top: 0;
+left:0;
+position:absolute;
+width:110px;
+height:100%;
+background: linear-gradient(to right, #ff105f, #ffad06);
+border-radius:30px;
+transition: .5s;
+}
+.input{
+top:110px;
+position:absolute;
+width:280px;
+transition:.5s;
+}
+.submit-btn{
+width:55%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+margin:auto;
+background:linear-gradient(to right,#ff105f,#ffad06);
+border:0;
+outline:none;
+border-radius:30px;
+}
+#materials{
+left:50px;
+}
+#events{
+left:450px;
+}
+</style>
+</head>
+<body>
+<div class="bg">
+<div class="form-box">
+<div class="button-box">
+<div id="btn"></div>
+<button type="button" class="toggle-btn" onclick="materials()">Course Materials</button>
+<button type="button" class="toggle-btn" onclick="events()">Events</button>
+</div>
+<form id="materials" class="input" action="map">
+<h5>Enter any of the the particulars:</h5>
+<p> 
+					<label for="courseId"> Enter the Course Id: </label>
+					<input type="text" id="courseId" name="courseId"> 
+</p>
+<p> 
+					<label for="courseName"> Enter Course name fully: </label>
+					<input id="courseName" name="courseName" type="text" />
+</p>
+<p> 
+					<label for="semester"> Enter the semester: </label>
+					<input id="sem" name="sem" type="number" />
+</p>
+<p> 
+					<label for="company"> Enter Company name: </label>
+					<input id="company" name="company" type="text" />
+</p>
+  <input type="submit" class="submit-btn" value="Submit">
+</form>
+<form id="events" class="input">
+<h5>Enter any of the the particulars:</h5>
+<p> 
+					<input type="radio" name="event" value="symp"> Symphosium 
+</p>
+<p> 
+					<input type="radio" name="event" value="pool"> Pool 
+</p>
+<p> 
+					<input type="radio" name="event" value="contest"> Constests 
+</p>
+  <input type="submit" class="submit-btn" value="Submit">
+</form>
+</div>
+</div>
+<script>
+var x=document.getElementById("materials");
+var y=document.getElementById("events");
+var z=document.getElementById("btn");
+function events(){
+x.style.left="-400px";
+y.style.left="50px";
+z.style.left="110px";
+}
+</script>
+</body>
+</html>
