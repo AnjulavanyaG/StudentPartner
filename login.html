@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Welcome!</title>
+<style>
+.bg{
+height:100%;
+width:100%;
+background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://img.collegedekhocdn.com/media/img/institute/crawled_images/None/DHGHTTJGGJTJT.jpg?tr=h-200,w-300%22);");
+background-position:center;
+background-size:cover;
+position:absolute;
+}
+.form-box{
+width:380px;
+height:450px;
+position:relative;
+margin:6% auto;
+background:#fff;
+padding:5px;
+overflow:hidden;
+}
+
+.input{
+position:absolute;
+width:280px;
+transition:.5s;
+}
+.submit-btn{
+width:55%;
+padding:10px 30px;
+cursor:pointer;
+display:block;
+margin:auto;
+background:linear-gradient(to right,#ff105f,#ffad06);
+border:0;
+outline:none;
+border-radius:30px;
+}
+#form-align{
+left:50px;
+}
+#events{
+left:450px;
+}
+</style>
+</head>
+<body>
+<div class="bg">
+<div class="form-box">
+<form id="form-align" class="input" action="page2.html">
+<br>
+<h2>Login</h2>
+<p> 
+					<label for="username"> Email or UserName </label>
+					<input id="username" name="username" required type="text" > 
+</p>
+<p> <label for="password" > Password </label> <br>
+					<input id="password" name="password" required="required" type="password" > 
+				</p>
+				<p>
+					<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+					<label for="loginkeeping" >Keep me logged in</label>
+				</p>
+
+  <input type="submit" class="submit-btn" value="Login">
+<p class="message">
+					Not a member yet ?
+					<a href="register.html">Register</a>
+				</p>
+  
+</form>
+
+</div>
+</div>
+
+</script>
+</body>
+</html>
