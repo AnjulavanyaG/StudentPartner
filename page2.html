@@ -5,19 +5,22 @@
 .bg{
 height:100%;
 width:100%;
-background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://img.collegedekhocdn.com/media/img/institute/crawled_images/None/DHGHTTJGGJTJT.jpg?tr=h-200,w-300%22");
+background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://www.newstatesman.com/sites/default/files/styles/cropped_article_image/public/blogs_2020/06/gettyimages-89018487.jpg?itok=utOrd8mw&c=9a6b5fa0636dfb2321b2c7b607fe1aaf");
 background-position:center;
 background-size:cover;
 position:absolute;
 }
 .form-box{
 width:380px;
-height:480px;
+height:390px;
 position:relative;
 margin:6% auto;
-background:#fff;
+background:##282828;
 padding:5px;
 overflow:hidden;
+}
+.fnt{
+color:#f2f2f2;
 }
 .button-box{
 width:220px;
@@ -33,6 +36,7 @@ background:transparent;
 border:0;
 outline:none;
 position:relative;
+color:white;
 }
 #btn{
 top: 0;
@@ -71,6 +75,7 @@ left:450px;
 </head>
 <body>
 <div class="bg">
+<div class="fnt">
 <div class="form-box">
 <div class="button-box">
 <div id="btn"></div>
@@ -80,36 +85,33 @@ left:450px;
 <form id="materials" class="input" action="map">
 <h5>Enter any of the the particulars:</h5>
 <p> 
-					<label for="courseId"> Enter the Course Id: </label>
-					<input type="text" id="courseId" name="courseId"> 
+					<label for="courseId"><h4>Enter the Course Id:
+					<input type="text" id="courseId" name="courseId"></h4> </label>
 </p>
 <p> 
-					<label for="courseName"> Enter Course name fully: </label>
-					<input id="courseName" name="courseName" type="text" />
+					<label for="courseName"><h4>Enter Course name fully: 
+					<input id="courseName" name="courseName" type="text" /></h4></label>
 </p>
 <p> 
-					<label for="semester"> Enter the semester: </label>
-					<input id="sem" name="sem" type="number" />
-</p>
-<p> 
-					<label for="company"> Enter Company name: </label>
-					<input id="company" name="company" type="text" />
+					<label for="company"><h4> Enter Company name: 
+					<input id="company" name="company" type="text" /></h4></label>
 </p>
   <input type="submit" class="submit-btn" value="Submit">
 </form>
 <form id="events" class="input">
 <h5>Enter any of the the particulars:</h5>
 <p> 
-					<input type="radio" name="event" value="symp"> Symphosium 
+					<h4> <input type="radio" name="event" value="symp"> Symphosium </h4>
 </p>
 <p> 
-					<input type="radio" name="event" value="pool"> Pool 
+					<h4> <input type="radio" name="event" value="pool"> Pool </h4>
 </p>
 <p> 
-					<input type="radio" name="event" value="contest"> Constests 
+					<h4> <input type="radio" name="event" value="contest">Constests </h4>
 </p>
   <input type="submit" class="submit-btn" value="Submit">
 </form>
+</div>
 </div>
 </div>
 <script>
