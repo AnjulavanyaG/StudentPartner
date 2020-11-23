@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Welcome!</title>
+<title>What are you looking for?</title>
 <style>
 .bg{
 height:100%;
@@ -80,9 +80,9 @@ left:450px;
 <div class="button-box">
 <div id="btn"></div>
 <button type="button" class="toggle-btn" onclick="materials()">Course Materials</button>
-<button type="button" class="toggle-btn" onclick="events()">Events</button>
+<button id="event-btn" type="button" class="toggle-btn" onclick="events()">Events</button>
 </div>
-<form id="materials" class="input" action="map">
+<form id="materials" class="input" action="mapMaterials">
 <h5>Enter any of the the particulars:</h5>
 <p> 
 					<label for="courseId"><h4>Enter the Course Id:
@@ -98,7 +98,7 @@ left:450px;
 </p>
   <input type="submit" class="submit-btn" value="Submit">
 </form>
-<form id="events" class="input">
+<form id="events" class="input" action="mapEvents">
 <h5>Enter any of the the particulars:</h5>
 <p> 
 					<h4> <input type="radio" name="event" value="symp"> Symphosium </h4>
